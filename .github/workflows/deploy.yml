@@ -12,7 +12,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 8
-      - run: pnpm install -g surge
-      - run: pnpm install
-      - run: pnpm build
+      - run: npm install -g surge
+      - run: npm install
+      - run: npm run build
       - run: surge ./dist ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
