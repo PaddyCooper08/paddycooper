@@ -1,6 +1,5 @@
 name: Deploy Astro to GitHub Pages
-
-    on:
+on:
      # Trigger the workflow every time you push to the `main` branch
       push:
         branches: [ main ]
@@ -8,12 +7,11 @@ name: Deploy Astro to GitHub Pages
       workflow_dispatch:
 
       # Allow this job to clone the repo and create a page deployment
-    permissions:
+permissions:    
       contents: read
       pages: write
       id-token: write
-
-    jobs:
+jobs:
       build:
         runs-on: ubuntu-latest
         steps:
@@ -38,7 +36,7 @@ name: Deploy Astro to GitHub Pages
           uses: actions/upload-pages-artifact@v1
           with:
             path: ./dist
-
+       
       deploy:
         environment:
           name: github-pages
