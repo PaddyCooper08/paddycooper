@@ -26,11 +26,11 @@ jobs:
 
         # Not using npm? Change `npm ci` to `yarn install` or `pnpm i`
         - name: Install dependencies
-          run: pnpm i
+          run: npm i
 
         # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
         - name: Build Astro
-          run: pnpm run build --if-present
+          run: npm run build --if-present
 
         - name: Upload artifact
           uses: actions/upload-pages-artifact@v1
