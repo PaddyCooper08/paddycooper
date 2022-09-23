@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-[99vh] items-center justify-center bg-[#122738]">
+  <div class="flex h-[99vh] items-center justify-center bg-[#24283b]">
     <div
       class="
         mx-auto
@@ -15,19 +15,19 @@
     >
       <div
         class="
-          border-b-2 border-[#ffc600]
+          border-b-2 border-[ #a9b1d6]
           py-3
           px-6
           text-xl
           font-bold
-          text-[#ff0088]
+          text-[#73daca]
         "
       >
         CMD
       </div>
       <div class="py-6">
         <div class="flex w-full items-center">
-          <h5 class="float-left text-left px-5 text-2xl text-[#ff0088]">
+          <h5 class="float-left text-left px-5 text-2xl text-[#73daca]">
             ~ paddy@cooper/info/about ->
           </h5>
           <h5 class="pl-5 pr-10 text-left text-xl text-[#ffc600]">

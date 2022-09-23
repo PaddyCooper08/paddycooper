@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-[99vh] items-center justify-center bg-[#122738]">
+  <div class="flex h-[99vh] items-center justify-center bg-[#24283b]">
     <div
       class="
         mx-auto
@@ -17,7 +17,7 @@
     >
       <div
         class="
-          border-b-2 border-[#ffc600]
+          border-b-2 border-[#a9b1d6]
           py-3
           px-6
           text-xl
