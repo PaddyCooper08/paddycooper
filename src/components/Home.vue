@@ -7,7 +7,7 @@
         h-[80%]
         w-[60%]
         rounded-lg
-        bg-[#193549]
+        bg-[#a9b1d6]
         text-center
         shadow-lg
         only:block
