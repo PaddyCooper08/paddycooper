@@ -1,8 +1,12 @@
 <template>
-  <div class="bg-[#24283b] h-[100vh]">
+  <div class="bg-[#24283b]">
     <!-- Create 3*3 tailwind grid -->
-    <div class="w-[50%] h-full">
-      <div class="grid grid-cols-3 grid-rows-3 gap-4">
+    <div
+      data-aos="fade-right"
+      data-aos-duration="3000"
+      class="w-[50%] flex items-center justify-center ml-20 h-screen"
+    >
+      <div class="grid grid-cols-3 grid-rows-3 gap-4 items-center">
         <!-- Loop through skills array -->
         <div
           v-for="skill in skills"
@@ -15,8 +19,31 @@
             :alt="skill.alt"
             class="w-24 h-24 p-2 rounded-md mb-2 bg-[#343b58]"
           />
-          <h3 class="text-xl font-bold">{{ skill.title }}</h3>
-          <p class="text-gray-500">{{ skill.description }}</p>
+          <h3 class="text-xl font-bold text-[#f7768e]">{{ skill.title }}</h3>
+          <p class="text-[#bb9af7] text-center">{{ skill.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div
+      data-aos="fade-right"
+      data-aos-duration="3000"
+      class="w-[50%] flex items-center justify-center ml-20 h-screen"
+    >
+      <div class="grid grid-cols-3 grid-rows-3 gap-4 items-center">
+        <!-- Loop through skills array -->
+        <div
+          v-for="skill in skills"
+          :key="skill.id"
+          class="flex flex-col items-center"
+        >
+          <!-- Tailwind classes for styling -->
+          <img
+            :src="skill.image"
+            :alt="skill.alt"
+            class="w-24 h-24 p-2 rounded-md mb-2 bg-[#343b58]"
+          />
+          <h3 class="text-xl font-bold text-[#f7768e]">{{ skill.title }}</h3>
+          <p class="text-[#bb9af7] text-center">{{ skill.description }}</p>
         </div>
       </div>
     </div>
@@ -24,7 +51,12 @@
 </template>
 
 <script>
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 export default {
+  mounted() {
+    AOS.init();
+  },
   // data is a function that returns an object
   data() {
     return {
@@ -41,13 +73,14 @@ export default {
         },
         {
           id: 2,
-          title: "Tailwind",
+          title: "CSS",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
           image:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
-          alt: "Tailwind",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          alt: "CSS",
         },
+
         {
           id: 3,
           title: "JavaScript",
@@ -59,14 +92,6 @@ export default {
         },
         {
           id: 4,
-          title: "Astro",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-          image: "https://astro.build/assets/press/logomark-dark.svg",
-          alt: "Astro",
-        },
-        {
-          id: 5,
           title: "Vue",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -75,39 +100,51 @@ export default {
           alt: "Vue",
         },
         {
-          id: 6,
-          title: "CSS",
+          id: 5,
+          title: "Astro",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
           image:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-          alt: "CSS",
+            "https://cdn.statically.io/img/astro.build/assets/press/logomark-dark.svg",
+          alt: "Astro",
         },
+
+        {
+          id: 6,
+          title: "Tailwind",
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          image:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+          alt: "Tailwind",
+        },
+
         {
           id: 7,
-          title: "CSS",
+          title: "Github",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
           image:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-          alt: "CSS",
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+          alt: "Github",
         },
         {
           id: 8,
-          title: "CSS",
+          title: "Vercel",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
           image:
-            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-          alt: "CSS",
+            "https://cdn.statically.io/gh/PaddyCooper08/portfolio/dee845fa/images/vercel.svg",
+          alt: "Vercel",
         },
         {
           id: 9,
-          title: "CSS",
+          title: "Django",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-          image: "https://cdn.statically.io/img/:domain/:image",
-          alt: "CSS",
+          image:
+            "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+          alt: "Django",
         },
       ],
     };
