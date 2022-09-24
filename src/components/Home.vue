@@ -15,7 +15,8 @@
     >
       <div
         class="
-          border-b-2 border-[ #a9b1d6]
+          border-b-2 border-[
+          #a9b1d6]
           py-3
           px-6
           text-xl
@@ -33,7 +34,9 @@
           <h5 class="pl-5 pr-10 text-left text-xl text-[#ffc600]">
             <p id="about"></p>
             <p>
-              <a href="/about" class="underline">localhost:3000/about</a>
+              <a href="/about" class="underline text-[#bb9af7]"
+                >localhost:3000/about</a
+              >
             </p>
           </h5>
           <!-- <button
