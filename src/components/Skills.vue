@@ -2,16 +2,48 @@
   <div class="bg-[#24283b]">
     <!-- Create 3*3 tailwind grid -->
 
-    <div class="flex items-center justify-center float-right mr-[5%] h-screen">
+    <div class="flex items-center justify-center h-screen">
       <div
         class="flex items-center justify-center w-[45%] ml-20 text-center"
         data-aos="fade-right"
         data-aos-duration="2000"
       >
-        <h1 class="text-[#f7768e]">Web Dev</h1>
+        <div class="rounded-lg h-[75%] w-[95%] bg-[#343b58] text-center">
+          <h1 class="text-3xl text-[#f7768e] mt-[5%]">Web Dev</h1>
+          <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide text-[#73daca]">
+                  Rideshare website
+                  <img
+                    src="https://cdn.statically.io/gh/PaddyCooper08/portfolio/11c37dd5/images/rideshare.png"
+                    alt=""
+                    class="h-full w-full"
+                  />
+                </li>
+                <li class="splide__slide text-[#73daca]">
+                  First time Bootstrap project
+                  <img
+                    src="https://cdn.statically.io/gh/PaddyCooper08/portfolio/b16f367f/images/nfm.png"
+                    alt=""
+                    class="h-full w-full"
+                  />
+                </li>
+                <li class="splide__slide">Slide 03</li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
       <div
-        class="grid grid-cols-3 grid-rows-3 gap-4 items-center w-[50%]"
+        class="
+          grid grid-cols-3 grid-rows-3
+          gap-4
+          items-center
+          w-[50%]
+          float-right
+          mr-[5%]
+        "
         data-aos="fade-left"
         data-aos-duration="2000"
       >
@@ -61,10 +93,15 @@
 <script>
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import "@splidejs/splide/css";
+import Splide from "@splidejs/splide";
+
 export default {
   mounted() {
     AOS.init();
+    new Splide(".splide").mount();
   },
+
   // data is a function that returns an object
   data() {
     return {
