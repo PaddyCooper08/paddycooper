@@ -1,12 +1,20 @@
 <template>
   <div class="bg-[#24283b]">
     <!-- Create 3*3 tailwind grid -->
-    <div
-      data-aos="fade-right"
-      data-aos-duration="3000"
-      class="w-[50%] flex items-center justify-center ml-20 h-screen"
-    >
-      <div class="grid grid-cols-3 grid-rows-3 gap-4 items-center">
+
+    <div class="flex items-center justify-center float-right mr-[5%] h-screen">
+      <div
+        class="flex items-center justify-center w-[45%] ml-20 text-center"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
+        <h1 class="text-[#f7768e]">Web Dev</h1>
+      </div>
+      <div
+        class="grid grid-cols-3 grid-rows-3 gap-4 items-center w-[50%]"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <!-- Loop through skills array -->
         <div
           v-for="skill in skills"
@@ -26,8 +34,8 @@
     </div>
     <div
       data-aos="fade-right"
-      data-aos-duration="3000"
-      class="w-[50%] flex items-center justify-center ml-20 h-screen"
+      data-aos-duration="2000"
+      class="w-[50%] flex items-center justify-center ml-[5%] h-screen"
     >
       <div class="grid grid-cols-3 grid-rows-3 gap-4 items-center">
         <!-- Loop through skills array -->
@@ -152,5 +160,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
