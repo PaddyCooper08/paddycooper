@@ -3,103 +3,63 @@
     <!-- Create 3*3 tailwind grid -->
 
     <div class="flex items-center justify-center h-screen">
-      <div
-        class="flex items-center justify-center w-[45%] ml-20 text-center"
-        data-aos="fade-right"
-        data-aos-duration="2000"
-      >
+      <div class="flex items-center justify-center w-[45%] ml-20 text-center" data-aos="fade-right"
+        data-aos-duration="2000">
         <div class="rounded-lg h-[75%] w-[95%] bg-[#343b58] text-center">
           <h1 class="text-3xl text-[#f7768e] mt-[5%]">Frontend Skills</h1>
-          <section
-            id="splide"
-            class="splide"
-            aria-label="Splide Basic HTML Example"
-          >
+          <section id="splide" class="splide" aria-label="Splide Basic HTML Example">
             <div id="splide" class="splide__track">
               <ul id="splide" class="splide__list">
                 <li id="splide" class="splide__slide text-[#73daca]">
                   Rideshare Website
-                  <img
-                    src="https://cdn.statically.io/gh/PaddyCooper08/portfolio/f055f637/images/rideshare1.png"
-                    alt=""
-                    class="h-full w-full"
-                  />
+                  <img src="https://cdn.statically.io/gh/PaddyCooper08/portfolio/f055f637/images/rideshare1.png" alt=""
+                    class="h-full w-full" />
                 </li>
                 <li id="splide" class="splide__slide text-[#73daca]">
                   Rideshare Website
-                  <img
-                    src="https://cdn.statically.io/gh/PaddyCooper08/portfolio/f055f637/images/rideshare2.svg"
-                    alt=""
-                    class="h-full w-full"
-                  />
+                  <img src="https://cdn.statically.io/gh/PaddyCooper08/portfolio/f055f637/images/rideshare2.svg" alt=""
+                    class="h-full w-full" />
                 </li>
                 <li id="splide" class="splide__slide text-[#73daca]">
                   Rideshare Website
-                  <img
-                    src="https://cdn.statically.io/gh/PaddyCooper08/portfolio/f055f637/images/rideshare3.png"
-                    alt=""
-                    class="h-full w-full"
-                  />
+                  <img src="https://cdn.statically.io/gh/PaddyCooper08/portfolio/f055f637/images/rideshare3.png" alt=""
+                    class="h-full w-full" />
                 </li>
               </ul>
             </div>
           </section>
         </div>
       </div>
-      <div
-        class="
+      <div class="
           grid grid-cols-3 grid-rows-3
           gap-4
           items-center
           w-[50%]
           float-right
           mr-[5%]
-        "
-        data-aos="fade-left"
-        data-aos-duration="2000"
-      >
+        " data-aos="fade-left" data-aos-duration="2000">
         <!-- Loop through skills array -->
-        <div
-          v-for="skill in skills"
-          :key="skill.id"
-          class="flex flex-col items-center"
-        >
+        <div v-for="skill in skills" :key="skill.id" class="flex flex-col items-center">
           <!-- Tailwind classes for styling -->
-          <img
-            :src="skill.image"
-            :alt="skill.alt"
-            class="w-24 h-24 p-2 rounded-md mb-2 bg-[#343b58]"
-          />
+          <img :src="skill.image" :alt="skill.alt" class="w-24 h-24 p-2 rounded-md mb-2 bg-[#343b58]" />
           <h3 class="text-xl font-bold text-[#f7768e]">{{ skill.title }}</h3>
           <p class="text-[#bb9af7] text-center">{{ skill.description }}</p>
         </div>
       </div>
     </div>
     <div class="flex items-center justify-center h-screen">
-      <div
-        class="
+      <div class="
           grid grid-cols-3 grid-rows-3
           gap-4
           items-center
           w-[50%]
           float-left
           mr-[5%]
-        "
-        data-aos="fade-left"
-        data-aos-duration="2000"
-      >
+        " data-aos="fade-left" data-aos-duration="2000">
         <!-- Loop through skills array -->
-        <div
-          v-for="backend_skill in backend_skills"
-          :key="backend_skill.id"
-          class="flex flex-col items-center"
-        >
+        <div v-for="backend_skill in backend_skills" :key="backend_skill.id" class="flex flex-col items-center">
           <!-- Tailwind classes for styling -->
-          <img
-            :src="backend_skill.image"
-            :alt="backend_skill.alt"
-            class="w-24 h-24 p-2 rounded-md mb-2 bg-[#343b58]"
-          />
+          <img :src="backend_skill.image" :alt="backend_skill.alt" class="w-24 h-24 p-2 rounded-md mb-2 bg-[#343b58]" />
           <h3 class="text-xl font-bold text-[#f7768e]">
             {{ backend_skill.title }}
           </h3>
@@ -108,8 +68,7 @@
           </p>
         </div>
       </div>
-      <div
-        class="
+      <div class="
           flex
           items-center
           justify-center
@@ -117,41 +76,26 @@
           mr-20
           text-center
           float-right
-        "
-        data-aos="fade-right"
-        data-aos-duration="2000"
-      >
+        " data-aos="fade-right" data-aos-duration="2000">
         <div class="rounded-lg h-[75%] w-[95%] bg-[#343b58] text-center">
           <h1 class="text-3xl text-[#f7768e] mt-[4%]">Backend/Python Skills</h1>
           <section id="splide1" class="splide">
             <div id="splide1" class="splide__track">
               <ul id="splide1" class="splide__list">
-                <li
-                  id="splide1"
-                  class="splide__slide text-[#73daca] items-center mx-auto"
-                >
+                <li id="splide1" class="splide__slide text-[#73daca] items-center mx-auto">
                   Simple email server
-                  <a href="https://github.com/PaddyCooper08/emailServer"
-                    ><img
-                      class="mx-auto h-full w-full"
-                      src="https://gh-card.dev/repos/PaddyCooper08/emailServer.svg?fullname"
-                  /></a>
+                  <a href="https://github.com/PaddyCooper08/emailServer"><img class="mx-auto h-full w-full"
+                      src="https://gh-card.dev/repos/PaddyCooper08/emailServer.svg?fullname" /></a>
                 </li>
                 <li id="splide1" class="splide__slide text-[#73daca]">
                   Discord.py bot
-                  <a href="https://github.com/PaddyCooper08/Zygote-bot"
-                    ><img
-                      class="mx-auto h-full w-full"
-                      src="https://gh-card.dev/repos/PaddyCooper08/Zygote-bot.svg?fullname"
-                  /></a>
+                  <a href="https://github.com/PaddyCooper08/Zygote-bot"><img class="mx-auto h-full w-full"
+                      src="https://gh-card.dev/repos/PaddyCooper08/Zygote-bot.svg?fullname" /></a>
                 </li>
                 <li id="splide1" class="splide__slide text-[#73daca]">
                   Machine Learning security camera
-                  <a href="https://github.com/PaddyCooper08/SecurityCam"
-                    ><img
-                      class="mx-auto h-full w-full"
-                      src="https://gh-card.dev/repos/PaddyCooper08/SecurityCam.svg?fullname="
-                  /></a>
+                  <a href="https://github.com/PaddyCooper08/SecurityCam"><img class="mx-auto h-full w-full"
+                      src="https://gh-card.dev/repos/PaddyCooper08/SecurityCam.svg?fullname=" /></a>
                 </li>
               </ul>
             </div>
@@ -160,79 +104,45 @@
       </div>
     </div>
     <div class="flex items-center justify-center h-screen">
-      <div
-        class="flex items-center justify-center w-[45%] ml-20 text-center"
-        data-aos="fade-right"
-        data-aos-duration="2000"
-      >
+      <div class="flex items-center justify-center w-[45%] ml-20 text-center" data-aos="fade-right"
+        data-aos-duration="2000">
         <div class="rounded-lg h-[75%] w-[95%] bg-[#343b58] text-center">
           <h1 class="text-3xl text-[#f7768e] mt-[5%]">IRL Skills</h1>
-          <section
-            id="splide2"
-            class="splide"
-            aria-label="Splide Basic HTML Example"
-          >
+          <section id="splide2" class="splide" aria-label="Splide Basic HTML Example">
             <div id="splide2" class="splide__track">
               <ul id="splide2" class="splide__list">
                 <li id="splide2" class="splide__slide text-[#73daca]">
-                  <a href="https://pexels.com" target="_blank"
-                    >Images from Pexels</a
-                  >
-                  <img
-                    src="https://cdn.statically.io/img/images.pexels.com/photos/1627960/pexels-photo-1627960.jpeg"
-                    alt=""
-                    class="h-full w-full"
-                  />
+                  <a href="https://pexels.com" target="_blank">Images from Pexels</a>
+                  <img src="https://cdn.statically.io/img/images.pexels.com/photos/1627960/pexels-photo-1627960.jpeg"
+                    alt="" class="h-full w-full" />
                 </li>
                 <li id="splide2" class="splide__slide text-[#73daca]">
-                  <a href="https://pexels.com" target="_blank"
-                    >Images from Pexels</a
-                  >
-                  <img
-                    src="https://cdn.statically.io/img/images.pexels.com/photos/3599596/pexels-photo-3599596.jpeg"
-                    alt=""
-                    class="h-full w-full"
-                  />
+                  <a href="https://pexels.com" target="_blank">Images from Pexels</a>
+                  <img src="https://cdn.statically.io/img/images.pexels.com/photos/3599596/pexels-photo-3599596.jpeg"
+                    alt="" class="h-full w-full" />
                 </li>
                 <li id="splide2" class="splide__slide text-[#73daca]">
-                  <a href="https://pexels.com" target="_blank"
-                    >Images from Pexels</a
-                  >
-                  <img
-                    src="https://cdn.statically.io/img/images.pexels.com/photos/90454/pexels-photo-90454.jpeg"
-                    alt=""
-                    class="h-full w-full"
-                  />
+                  <a href="https://pexels.com" target="_blank">Images from Pexels</a>
+                  <img src="https://cdn.statically.io/img/images.pexels.com/photos/90454/pexels-photo-90454.jpeg" alt=""
+                    class="h-full w-full" />
                 </li>
               </ul>
             </div>
           </section>
         </div>
       </div>
-      <div
-        class="
+      <div class="
           grid grid-cols-3 grid-rows-3
           gap-4
           items-center
           w-[50%]
           float-right
           mr-[5%]
-        "
-        data-aos="fade-left"
-        data-aos-duration="2000"
-      >
+        " data-aos="fade-left" data-aos-duration="2000">
         <!-- Loop through skills array -->
-        <div
-          v-for="irl_skill in irl_skills"
-          :key="irl_skill.id"
-          class="flex flex-col items-center"
-        >
+        <div v-for="irl_skill in irl_skills" :key="irl_skill.id" class="flex flex-col items-center">
           <!-- Tailwind classes for styling -->
-          <img
-            :src="irl_skill.image"
-            :alt="irl_skill.alt"
-            class="w-24 h-24 p-2 rounded-md mb-2 bg-[#343b58]"
-          />
+          <img :src="irl_skill.image" :alt="irl_skill.alt" class="w-24 h-24 p-2 rounded-md mb-2 bg-[#343b58]" />
           <h3 class="text-xl font-bold text-[#f7768e]">
             {{ irl_skill.title }}
           </h3>
@@ -243,7 +153,7 @@
   </div>
 </template>
 
-<script>
+<script >
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import "@splidejs/splide/css";
@@ -553,4 +463,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+</style>
