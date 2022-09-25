@@ -156,12 +156,13 @@
 <script >
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import "@splidejs/splide/css";
-import Splide from "@splidejs/splide";
+import "./splide.min.js"
+import "./splide.min.css"
 
 export default {
   mounted() {
     AOS.init();
+
     new Splide("#splide", {
       type: "loop",
       perPage: 1,
@@ -192,6 +193,7 @@ export default {
       interval: 3000,
       easing: "ease-in-out",
     }).mount();
+
   },
 
   // data is a function that returns an object

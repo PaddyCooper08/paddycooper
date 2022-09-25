@@ -1,7 +1,6 @@
 <template>
   <div class="flex h-[99vh] items-center justify-center bg-[#24283b]">
-    <div
-      class="
+    <div class="
         mx-auto
         my-auto
         h-[80%]
@@ -11,10 +10,8 @@
         text-center
         shadow-lg
         only:block
-      "
-    >
-      <div
-        class="
+      ">
+      <div class="
           border-b-2 border-[
           #a9b1d6]
           py-3
@@ -22,8 +19,7 @@
           text-xl
           font-bold
           text-[#73daca]
-        "
-      >
+        ">
         CMD
       </div>
       <div class="py-6">
@@ -34,9 +30,7 @@
           <h5 class="pl-5 pr-10 text-left text-xl text-[#ffc600]">
             <p id="about"></p>
             <p>
-              <a href="/about" class="underline text-[#bb9af7]"
-                >localhost:3000/about</a
-              >
+              <a href="/about" class="underline text-[#bb9af7]">localhost:3000/about</a>
             </p>
           </h5>
           <!-- <button
@@ -69,6 +63,8 @@
 </template>
 
 <script>
+
+
 </script>
 
 <style >

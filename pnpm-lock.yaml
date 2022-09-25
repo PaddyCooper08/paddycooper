@@ -3,14 +3,12 @@ lockfileVersion: 5.4
 specifiers:
   '@astrojs/tailwind': ^1.0.0
   '@astrojs/vue': ^1.0.0
-  '@splidejs/splide': ^4.1.2
   aos: 3.0.0-beta.6
   astro: ^1.1.5
   typewriter-effect: ^2.19.0
   vue: ^3.2.30
 
 dependencies:
-  '@splidejs/splide': 4.1.2
   aos: 3.0.0-beta.6
   astro: 1.1.5
   typewriter-effect: 2.19.0
@@ -488,10 +486,6 @@ packages:
     dependencies:
       '@proload/core': 0.3.3
       tsm: 2.2.2
-    dev: false
-
-  /@splidejs/splide/4.1.2:
-    resolution: {integrity: sha512-7sv4Azb4hHJ8PGT2H/ilsElrxQ3+xrKwajBX/jkntjktrsqb3u3FXzo71dNPhwVr0hXVQUFgwvn0BjhwYzUJKw==}
     dev: false
 
   /@types/acorn/4.0.6:
