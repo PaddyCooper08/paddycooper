@@ -113,20 +113,18 @@
               <ul id="splide2" class="splide__list">
                 <li id="splide2" class="splide__slide text-[#73daca]">
                   <a href="https://pexels.com" target="_blank">Images from Pexels</a>
-                  <img
-                    src="https://cdn.statically.io/img/images.pexels.com/f=auto/photos/1627960/pexels-photo-1627960.jpeg"
-                    alt="" class="h-full w-full" />
+                  <img src="https://cdn.statically.io/gh/PaddyCooper08/portfolio/23427209/images/rugby.jpg" alt=""
+                    class="h-full w-full" />
                 </li>
                 <li id="splide2" class="splide__slide text-[#73daca]">
                   <a href="https://pexels.com" target="_blank">Images from Pexels</a>
-                  <img
-                    src="https://cdn.statically.io/img/images.pexels.com/f=auto/photos/3599596/pexels-photo-3599596.jpeg"
-                    alt="" class="h-full w-full" />
+                  <img src="https://cdn.statically.io/gh/PaddyCooper08/portfolio/23427209/images/hockey.jpg" alt=""
+                    class="h-full w-full" />
                 </li>
                 <li id="splide2" class="splide__slide text-[#73daca]">
                   <a href="https://pexels.com" target="_blank">Images from Pexels</a>
-                  <img src="https://cdn.statically.io/img/images.pexels.com/f=auto/photos/90454/pexels-photo-90454.jpeg"
-                    alt="" class="h-full w-full" />
+                  <img src="https://cdn.statically.io/gh/PaddyCooper08/portfolio/23427209/images/mtb.jpg" alt=""
+                    class="h-full w-full" />
                 </li>
               </ul>
             </div>
