@@ -7,11 +7,13 @@ specifiers:
   astro: ^1.1.5
   typewriter-effect: ^2.19.0
   vue: ^3.2.30
+  vue-meta: ^2.4.0
 
 dependencies:
   aos: 3.0.0-beta.6
   astro: 1.1.5
   typewriter-effect: 2.19.0
+  vue-meta: 2.4.0
 
 devDependencies:
   '@astrojs/tailwind': 1.0.0
@@ -3472,6 +3474,12 @@ packages:
 
   /vscode-uri/3.0.3:
     resolution: {integrity: sha512-EcswR2S8bpR7fD0YPeS7r2xXExrScVMxg4MedACaWHEtx9ftCF/qHG1xGkolzTPcEmjTavCQgbVzHUIdTMzFGA==}
+    dev: false
+
+  /vue-meta/2.4.0:
+    resolution: {integrity: sha512-XEeZUmlVeODclAjCNpWDnjgw+t3WA6gdzs6ENoIAgwO1J1d5p1tezDhtteLUFwcaQaTtayRrsx7GL6oXp/m2Jw==}
+    dependencies:
+      deepmerge: 4.2.2
     dev: false
 
   /vue/3.2.38:
