@@ -13,7 +13,8 @@
   "dependencies": {
     "aos": "3.0.0-beta.6",
     "astro": "^1.1.5",
-    "typewriter-effect": "^2.19.0"
+    "typewriter-effect": "^2.19.0",
+    "vue-meta": "^2.4.0"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^1.0.0",
