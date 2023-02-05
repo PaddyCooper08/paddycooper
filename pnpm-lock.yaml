@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@astrojs/tailwind': ^1.0.0
   '@astrojs/vue': ^1.0.0
+  action: github:withastro/action
   aos: 3.0.0-beta.6
   astro: ^1.1.5
   typewriter-effect: ^2.19.0
@@ -10,6 +11,7 @@ specifiers:
   vue-meta: ^2.4.0
 
 dependencies:
+  action: github.com/withastro/action/dc081df9eacdb11181ea51e5d05853faa5aee891
   aos: 3.0.0-beta.6
   astro: 1.1.5
   typewriter-effect: 2.19.0
@@ -3573,4 +3575,10 @@ packages:
 
   /zwitch/2.0.2:
     resolution: {integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==}
+    dev: false
+
+  github.com/withastro/action/dc081df9eacdb11181ea51e5d05853faa5aee891:
+    resolution: {tarball: https://codeload.github.com/withastro/action/tar.gz/dc081df9eacdb11181ea51e5d05853faa5aee891}
+    name: action
+    version: 0.0.0
     dev: false
